@@ -27,8 +27,9 @@
 			<li>Task2</li>
 		</ul>
 		<div class="list_tasks">
-        <a class="done" href="tasks/task1.php">Task 1.1</a>
+        <a class="done" href="tasks/task1.php">Task 1</a>
         <a class="done" href="tasks/task2.php">Task 2</a>
+		<a class="done" href="tasks/task3.php">Task 3</a>
         
     </div>
 	</div>
