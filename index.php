@@ -42,16 +42,28 @@
 			</div>
 	    <script>
 			$(function(){
-				$("#box-block").mouseover(function(){
+				$(".content-block").mouseover(function(){
 					var $p = $(".block-first");
 					$p.stop()
 					  .delay(3500).css("background-color","red").show(3000);
 					 
 				});
-				$("#box-block").mouseout(function(){
+                                $(".content-block").mouseover(function(){
+					var $p = $(".block-second");
+					$p.stop()
+					  .delay(3500).css("background-color","orange").show(3000);
+					 
+				});
+				$(".content-block").mouseout(function(){
 					var $p = $(".block-first");
 					$p.stop()
 					  .delay(3500).css("background-color","yellow");
+					 
+				});
+                                $(".content-block").mouseout(function(){
+					var $p = $(".block-second");
+					$p.stop()
+					  .delay(3500).css("background-color","green");
 					 
 				});
 			});
