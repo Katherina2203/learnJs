@@ -1,23 +1,25 @@
+function sortCities(){
 var cities = "Винница Балановка Ладыжин Луцк Владимир-Волынский Ковель Нововолынск Днепропетровск Булаховка Днепродзержинск Жёлтые-Воды Зеленодольск Кривой-Рог Кринички Марганец Никополь Новомосковск Павлоград Житомир Андреевка Бердичев Коростень Новоград-Волынский Ужгород Берегово Виноградов Иршава Мукачево Рахов Свалява Тячев Хуст Запорожье Бердянск Днепрорудное Камыш-Заря Мелитополь Токмак Энергодар Ивано-Франковск Бурштын Калуш Коломыя Белая-Церковь Борисполь Бровары Вышгород Припять";
 
 var citiesArr = cities.split(' ');
-// console.log(citiesArr); create the array with cities
-
-var rand = citiesArr[Math.floor(Math.random() * citiesArr.length)];
-// console.log(rand); get random city from cities-Array
-
-//function sortCity(){
-    var resultCities = [];
+var rand = citiesArr[Math.floor(Math.random() * (citiesArr.length-1))];
+var resultCities = [];
+    resultCities.push(rand);
+    citiesArr.splice(rand, 1);
     
-   // resultCities[0] = rand; //первый элемент массива будет Рандомный город
-    for (var i = rand; i < citiesArr.length; i++){
-      //  var sortArr = resultCities.sort().push(citiesArr[i]);
-        resultCities[0] = rand;
-        //resultCities = resultCities.slice().sort().push(citiesArr[i]);//push(citiesArr[i])
-        resultCities = resultCities.unshift(rand);
-    };
+    while(cities.length != 0){
+        for(let i = 0; resultCities.length > 0; i++){
+            for(let j = 0; citiesArr > 0; i++){
+                if(resultCities[i.length-1] == citiesArr[j[0]]){
+                    resultCities.push(citiesArr[j[0]]);
+                    citiesArr.splice(citiesArr[j[0]],1);
+                }else{
+                    resultCities.push(rand);
+                }
+            }
+        }
+    }
+return resultCities;
+}
 
- //   return resultCities;
-//}
-citiesArr.sort();
-
+document.write(sortCities());
