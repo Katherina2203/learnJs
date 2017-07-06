@@ -1,0 +1,26 @@
+body{
+	padding-bottom: 40px; 
+}
+h3{
+	text-align:center;
+}
+#wrapper{}
+
+#container{
+	width: 1170px; 
+    margin: 0 auto; 
+	min-height: 100%;
+	border: 1px solid red}
+	
+#left-side{float:left; width: 340px;border: 1px solid blue}
+
+.list_tasks a {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px;
+}
+.list_tasks a.done {
+  background: green;
+}
