@@ -1,15 +1,12 @@
 function getInRange(start, end){
-    var countInRange = function(){
-        for(var i = start; i < end; i++){
-            var counts = 0;
-            if(counts[i]%5 && counts[i]){
-                counts = count(counts[i]);
-            }
-            
-        }
-    };
-    
-    return start < end ? alert('Количество чисел без “5” :', countInRange) : alert('Количество чисел без “5” :', countInRange);
+  for (var i=0; start <= end; start++){
+    if ((String(start)).indexOf(5) > -1){
+      continue;
+    } else {
+      i++;
+    }
+  }
+  return i;
 }
 
 getInRange(start, end);
@@ -19,5 +16,10 @@ getInRange(start, end);
 //start = - 7
 //end = 7
 //Количество чисел без “5” : 13
+
+
+function getInRange(start, end){
+   for(var i = start; i <= end; i++) document.write(i+ '')
+}
 
 

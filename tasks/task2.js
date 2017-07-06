@@ -19,4 +19,5 @@ var rand = citiesArr[Math.floor(Math.random() * citiesArr.length)];
 
  //   return resultCities;
 //}
+citiesArr.sort();
 
