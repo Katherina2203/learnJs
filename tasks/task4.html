@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html  lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <title>Canvas balls. Task 4</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    
+</head>
+<body>
+    <div id="wrapper">
+	<div id="container">
+            <p>Создать холст. На холст добавлять шарики разного диаметра и разного цвета. Через каждые 5 секунд. Всего должно быть 20 шариков. Шарики должны двигаться по холсту с одинаковой скоростью, отскакивать от стенок холста в разных направлениях. Появляются все шарики в координате 0,0
+            </p>
+            <div class="box-body" style="width: 500px; margin: 0 auto;border: 1px solid #ccc;">
+                <canvas height="320" width="480" id="canvas">Обновите браузер</canvas>
+                <script src="tasks/task4.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                    var canvas = document.getElementById("canvas"),
+                        ctx = canvas.getContext('2d'),
+                        childs = {},
+                        cellSize = 20; //массив объектов сцены
+                      
+                        for(var i=0; i<=canvas.width; i+= cellSize){
+                            ctx.moveTo(i, 0);
+                            ctx.lineTo(i, canvas.width);
+                        }
+                        for(var i=0; i<=canvas.height; i+= cellSize){
+                            ctx.moveTo(0, i);
+                            ctx.lineTo(canvas.height, i)
+                        }
+                        
+                       
+                        
+                        function drawBall(){
+                            var  ctx.arc(x, y, ballRadius, 0, Math.PI*2); //drawing the ball
+                            
+                            ctx.strokeStyle = '#ccc';//'#B70A02';
+                            ctx.strokeStyle = '#FFF';
+                            
+                            var scale = 0.3 + 0.05 * i;
+                                moon.scale = {x: scale, y: scale};
+                                moon.body.setCircle(60 * scale);
+
+                                moon.damping = 0;
+                                moon.angularDamping = 0;
+                            moon.body.velocity.x = Math.floor(Math.random() * maxVelocity + 1);
+                            moon.body.velocity.y = Math.floor(Math.random() * maxVelocity + 1);
+                        }
+                        // в то время как timePassed идёт от 0 до 2000
+                        // left принимает значения от 0 до 400px
+                        function runBall(timePassed) {
+                            for(var i = 1; i<=20; i++){//instead i should be ball
+                                train.style.left = timePassed / 5 + 'px';
+                            }
+                        }
+                        
+                        //устанавливаем интервал для шариков до окончания 
+                        var  timer = setInterval(function(){
+
+                            if (timePassed >= 5000) {
+                                clearInterval(timer); // конец через 5 секунды
+                                return;
+                            }
+                            // рисует шарик состояние анимации, соответствующее времени timePassed
+                            drawBall(timePassed);
+                        },1000/16); 
+                        
+                        
+                        
+                </script>
+               
+            </div>
+        </div>
+    </div>	
+</body>
+</html>

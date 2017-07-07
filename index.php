@@ -92,6 +92,66 @@
                             </li>
                            
                     </ul>
+                
+                
+                
+        <table class="table-grid" align="center" border="1" cellpadding="4" cellspacing="0" style="background:#9bbb58">
+	<tbody>
+		<tr>
+			<th scope="row"><strong>Тип помещения</strong></th>
+			<td class="rtecenter"><strong>Цена</strong></td>
+			<td class="rtecenter"><strong>Гарантия</strong></td>
+		</tr>
+		<tr>
+			<th scope="row">Общежитие</th>
+			<td>от 500</td>
+			<td>0 месяцев</td>
+		</tr>
+		<tr>
+			<th scope="row">1- комнатная квартира</th>
+			<td>от 550</td>
+			<td>6 месяцев</td>
+		</tr>
+		<tr>
+			<th scope="row">2-комнатная квартира</th>
+			<td>от 600</td>
+			<td>6 месяцев</td>
+		</tr>
+		<tr>
+			<th scope="row">3-комнатная квартира</th>
+			<td>от 650</td>
+			<td>6 месяцев</td>
+		</tr>
+		<tr>
+			<th scope="row">4-комнатная квартира</th>
+			<td>от 700</td>
+			<td>6 месяцев</td>
+		</tr>
+		<tr>
+			<th scope="row">Частный дом до 90 м.кв.</th>
+			<td>от 700</td>
+			<td>1 месяц</td>
+		</tr>
+		<tr>
+			<th scope="row">Частный дом свыше 90 м.кв.</th>
+			<td>договор.</td>
+			<td>1 месяц</td>
+		</tr>
+	</tbody>
+</table>
+                <script>
+                    $(function(){
+                        
+                        $("tr:even").addClass("even");
+                        $("tr:odd").addClass("odd");
+                        $("tr:first-child").addClass("caption");
+                    });
+                </script>
+                <style>
+                    .table-grid tr:nth-child(odd) {background: #cdddac}
+                    .table-grid tr:nth-child(even) {background: #e6eed6}
+                    .table-grid tr:first-child(caption) {background:#9bbb58}
+                </style>
             </div>
         </div>
     </div>	

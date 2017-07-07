@@ -29,9 +29,9 @@ btn.addEventListener("click", function(){
 });
 
 function renderHtml(data){
-    var htmlString = '';
+    var htmlString = 'try tests';
     for(i = 0; i < data.length; i++){
-        htmlString += '<p>' + data[i].name + '</p>';
+        htmlString += '<p>' + 'try tests' + '</p>';
     }
     resultContainer.insertAdjacentHTML('beforeend', htmlString);
 }

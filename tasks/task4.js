@@ -6,7 +6,7 @@ function runAnimationBubble()
         childs = {}, //массив объектов сцены
         animate = {};//Массив анимаций для объектов
 
-
+    ctx.arc(x, y, ballRadius, 0, Math.PI*2);
 }
 
 function initAnimation()
