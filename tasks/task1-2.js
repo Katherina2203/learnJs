@@ -22,4 +22,16 @@ function getInRange(start, end){
    for(var i = start; i <= end; i++) document.write(i+ '')
 }
 
-
+//var2
+function getInRange(start, end){
+	var res;
+	if(start<end){
+		for(let i = start; i <= end; i++) {
+			res += res[i].indexOf(5);
+		}
+		//console.log('ook');
+	}else{
+		console.log('Первое число не меньше второго');
+	}
+	return console.log("Количество чисел без “5” :" + res);
+}
