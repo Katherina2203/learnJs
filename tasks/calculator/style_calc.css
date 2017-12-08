@@ -1,42 +1,32 @@
 *{}
 body{}
-#calculator{margin-top:50px}
+input{
+    height: 25px;
+    font-size: 30px;
+    padding: 3px;
+    border-radius: 3px;
+}
+input[type=text]{
+    border: 1px solid black;
+}
+#calculator{
+    width: 250px;
+    margin: 0 auto;
+
+}
 
 .calc{
-	width: 500px;
-	margin: 0 auto;
-	border: 1px solid #c9c9c9;
+    height: 350px;
+    border: 1px solid grey;
+    /*margin: 100px auto 0;*/
+    margin-top: 50px;
+    text-align: center;
+    background-color: yellowgreen;
+    border-radius: 4px;
 }
 
-.arithm{
-	background: #f0f0f0;
-	padding: 5px;
-	font-size: 16px;
-	font-weight: bold;
-}
-.outnum{
-	/*display:inline-block;*/
-	background: #f6f6f6;
-
-}
-
-.numbers{
-	/*position:relative;
-	top: 0;
-	width: 75%;
-	background: #f9f9f9;
-	margin: 0;
-	border: 1px solid blue;
-	*/
-	
-}
-
-.btn{
-    float:left;
-    padding: 5px;
-}
-
-.btn:hover{
-	
+#calculator form {
+    height: 100%;
+    padding: 10px;
 }
 
