@@ -39,7 +39,7 @@ function renderHtml(data){
 function getProductsBySort(name, price,model){
     var newProducts =[];
     
-    for (var i = 0; i < products.length; i++){
+    for (var i in products){
        
     }
     
