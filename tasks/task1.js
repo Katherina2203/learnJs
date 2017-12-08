@@ -1,8 +1,10 @@
 function runPrecisionExp(n){
     var precisionExp, 
-            numerator, denumerator = function(n){
+        numerator, 
+		denumerator = function(n){
                 (n !== 1) ? n * denumerator(n-1) : 1;
-            }, x = 1;
+            }, 
+		x = 1;
     
    
         numerator = Math.pow(x, n);
