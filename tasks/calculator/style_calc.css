@@ -1,0 +1,42 @@
+*{}
+body{}
+#calculator{margin-top:50px}
+
+.calc{
+	width: 500px;
+	margin: 0 auto;
+	border: 1px solid #c9c9c9;
+}
+
+.arithm{
+	background: #f0f0f0;
+	padding: 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.outnum{
+	/*display:inline-block;*/
+	background: #f6f6f6;
+
+}
+
+.numbers{
+	/*position:relative;
+	top: 0;
+	width: 75%;
+	background: #f9f9f9;
+	margin: 0;
+	border: 1px solid blue;
+	*/
+	
+}
+
+.btn{
+    float:left;
+    padding: 5px;
+}
+
+.btn:hover{
+	
+}
+
